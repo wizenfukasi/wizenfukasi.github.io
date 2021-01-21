@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <div class="sidebar-header">
+                <h3>Admin</h3>
+            </div>
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-rekreasi-tab" data-toggle="pill" href="#v-pills-rekreasi" role="tab" aria-controls="v-pills-rekreasi" aria-selected="true">Kelola Data Rekreasi</a>
+                <a class="nav-link" id="v-pills-kuliner-tab" data-toggle="pill" href="#v-pills-kuliner" role="tab" aria-controls="v-pills-kuliner" aria-selected="false">Kelola Data Kuliner</a>
+                <a class="nav-link" id="v-pills-komentar-tab" data-toggle="pill" href="#v-pills-komentar" role="tab" aria-controls="v-pills-komentar" aria-selected="false">Kelola Komentar</a>
+                <a class="nav-link" href="home.html">Home</a>
+              </div>
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fa fa-align-left" aria-hidden="true"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    
+                </div>
+            </nav>
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-rekreasi" role="tabpanel" aria-labelledby="v-pills-rekreasi-tab">
+                    <div class="panel-body">
+                        <table class="table table-dark">
+                            <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Nama</th>
+                                <th scope="col">Jenis Wisata</th>
+                                <th scope="col">Rating</th>
+                                <th scope="col">Kontak Person</th>
+                                <th scope="col">Upload Foto</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Masjid Kubah Emas</td>
+                                    <td>Wisata Religius</td>
+                                    <td><i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    </td>
+                                    <td>Budi</td>
+                                    <td><input type="file"></td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning btn-sm badge-pill"><i class="fa fa-eye" aria-hidden="true"></i> View</button>
+                                        <button type="button" class="btn btn-primary btn-sm badge-pill"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</button>
+                                        <button type="button" class="btn btn-danger btn-sm badge-pill"><i class="fa fa-trash" aria-hidden="true"></i> Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Pasir Putih Depok</td>
+                                    <td>Kolam Renang</td>
+                                    <td><i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    </td>
+                                    <td>Andi</td>
+                                    <td><input type="file"></td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning btn-sm badge-pill"><i class="fa fa-eye" aria-hidden="true"></i> View</button>
+                                        <button type="button" class="btn btn-primary btn-sm badge-pill"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</button>
+                                        <button type="button" class="btn btn-danger btn-sm badge-pill"><i class="fa fa-trash" aria-hidden="true"></i> Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>  
+                                    <td>Taman Lembah Gurame</td>
+                                    <td>Taman Kota</td>
+                                    <td><i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    </td>
+                                    <td>Tono</td>
+                                    <td><input type="file"></td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning btn-sm badge-pill"><i class="fa fa-eye" aria-hidden="true"></i> View</button>
+                                        <button type="button" class="btn btn-primary btn-sm badge-pill"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</button>
+                                        <button type="button" class="btn btn-danger btn-sm badge-pill"><i class="fa fa-trash" aria-hidden="true"></i> Delete</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="right">
+                            <button type="button" class="btn btn-success">Tambah Baru</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-kuliner" role="tabpanel" aria-labelledby="v-pills-kuliner-tab">
+                    <div class="panel-body">
+                        <table class="table table-dark">
+                            <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Nama</th>
+                                <th scope="col">Jenis Wisata</th>
+                                <th scope="col">Rating</th>
+                                <th scope="col">Kontak Person</th>
+                                <th scope="col">Upload Foto</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Saung Talaga</td>
+                                    <td>Rumah Makan</td>
+                                    <td><i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    </td>
+                                    <td>Dimas</td>
+                                    <td><input type="file"></td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning btn-sm badge-pill"><i class="fa fa-eye" aria-hidden="true"></i> View</button>
+                                        <button type="button" class="btn btn-primary btn-sm badge-pill"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</button>
+                                        <button type="button" class="btn btn-danger btn-sm badge-pill"><i class="fa fa-trash" aria-hidden="true"></i> Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Gubug Mang Engking</td>
+                                    <td>Rumah Makan</td>
+                                    <td><i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    </td>
+                                    <td>Annisa</td>
+                                    <td><input type="file"></td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning btn-sm badge-pill"><i class="fa fa-eye" aria-hidden="true"></i> View</button>
+                                        <button type="button" class="btn btn-primary btn-sm badge-pill"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</button>
+                                        <button type="button" class="btn btn-danger btn-sm badge-pill"><i class="fa fa-trash" aria-hidden="true"></i> Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Restoran Bawang Putih</td>
+                                    <td>Restoran</td>
+                                    <td><i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    </td>
+                                    <td>Budi</td>
+                                    <td><input type="file"></td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning btn-sm badge-pill"><i class="fa fa-eye" aria-hidden="true"></i> View</button>
+                                        <button type="button" class="btn btn-primary btn-sm badge-pill"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</button>
+                                        <button type="button" class="btn btn-danger btn-sm badge-pill"><i class="fa fa-trash" aria-hidden="true"></i> Delete</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="right">
+                            <button type="button" class="btn btn-success">Tambah Baru</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-komentar" role="tabpanel" aria-labelledby="v-pills-komentar-tab">
+                    <div class="panel-body">
+                        <table class="table table-dark">
+                            <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Nama</th>
+                                <th scope="col">Komentar</th>
+                                <th scope="col">Tempat Berkomentar</th>
+                                <th scope="col">Upload Foto</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Budi</td>
+                                    <td>Tempatnya sangat bagus</td>
+                                    <td>Masjid Kubah Emas</td>
+                                    <td><input type="file"></td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning btn-sm badge-pill"><i class="fa fa-eye" aria-hidden="true"></i> View</button>
+                                        <button type="button" class="btn btn-primary btn-sm badge-pill"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</button>
+                                        <button type="button" class="btn btn-danger btn-sm badge-pill"><i class="fa fa-trash" aria-hidden="true"></i> Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Budi</td>
+                                    <td>Tempatnya sangat bagus</td>
+                                    <td>Masjid Kubah Emas</td>
+                                    <td><input type="file"></td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning btn-sm badge-pill"><i class="fa fa-eye" aria-hidden="true"></i> View</button>
+                                        <button type="button" class="btn btn-primary btn-sm badge-pill"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</button>
+                                        <button type="button" class="btn btn-danger btn-sm badge-pill"><i class="fa fa-trash" aria-hidden="true"></i> Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Budi</td>
+                                    <td>Tempatnya sangat bagus</td>
+                                    <td>Masjid Kubah Emas</td>
+                                    <td><input type="file"></td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning btn-sm badge-pill"><i class="fa fa-eye" aria-hidden="true"></i> View</button>
+                                        <button type="button" class="btn btn-primary btn-sm badge-pill"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</button>
+                                        <button type="button" class="btn btn-danger btn-sm badge-pill"><i class="fa fa-trash" aria-hidden="true"></i> Delete</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="right">
+                            <button type="button" class="btn btn-success">Tambah Baru</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <footer class="container-fluid text-center">
+        <p>Develope By Mahasiswa @STT-NF 2021</p> 
+    </footer>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

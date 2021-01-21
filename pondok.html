@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Bawang Putih</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/detailkuliner.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">    
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">SIWIKODE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rekreasi.html">Wisata Rekreasi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kuliner.html">Wisata Kuliner</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Registrasi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="needs-validation" novalidate>
+                    <div class="form-group">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <label for="text">Username</label>
+                        <input type="text" class="form-control" placeholder="Enter username" id="name" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <label for="pwd">Password</label>
+                        <input type="password" class="form-control" placeholder="Enter password" id="pwd" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" required> Remember me
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb arr-right">
+            <li class="breadcrumb-item"><a class="text-dark" href="home.html">Home</a></li>
+            <li class="breadcrumb-item"><a class="text-dark" href="kuliner.html">Wisata Kuliner</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Saung Talaga</li>
+        </ol>
+    </nav>
+
+    <section class="header">
+        <div class="container-fluid padding">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <h1 class="display-4">Restourant Bawang Putih</h1>
+                </div>
+                <div class="border-top border-primary w-50 mx-auto my-3"></div>
+            </div>
+        </div>
+
+        <div class="container">  
+            <div class="tz-gallery">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="img/2018-05-03.jpg">
+                            <img src="img/2018-05-03.jpg" alt="Park">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="img/download (2).jpg">
+                            <img src="img/download (2).jpg" alt="Bridge">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <a class="lightbox" href="img/picture-1518224996.jpg">
+                            <img src="img/picture-1518224996.jpg" alt="Tunnel">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="img/download (1).jpg">
+                            <img src="img/download (1).jpg" alt="Coast">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="img/download.jpg">
+                            <img src="img/download.jpg" alt="Rails">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="img/img20171228194833-largejpg.jpg">
+                            <img src="img/img20171228194833-largejpg.jpg" alt="Traffic">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="deskripsi">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center welcome">
+                    <h1 class="display-4">Deskripsi</h1>
+                    <div class="border-top border-primary w-50 mx-auto my-3"></div>
+                    <div class="row text-left pt-4">
+                        <div class="col-12 col-md-6">
+                        <p class="lead">Jika akhir pekan ini kamu belum punya rencana mau makan dimana, Resto Bawang Putih bisa menjadi pilihan yang menarik untuk mengisi hari libur. Rasanya enak dan pilihan menunya banyak.</p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                        <p class="lead">Beberapa menu yang bisa kamu pesan antara lain olahan daging sapi, ayam geprek, pempek, seblak, nasi goreng, bebek goreng dan masih banyak pilihan yang lain.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="kontak">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center welcome">
+                    <h1 class="display-4">Kontak</h1>
+                    <div class="border-top border-primary w-50 mx-auto my-3"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7">
+                    <form action="/" class="mb-4 mb-lg-0">
+                        <div class="form-row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" />
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" />
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" placeholder="Type Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.9020891852956!2d106.74812001477011!3d-6.406613395364509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e8ea534c9d91%3A0xe7e823a5d170ada9!2sRumah%20makan%20bawang%20putih%20resto!5e0!3m2!1sid!2sid!4v1611219606381!5m2!1sid!2sid" width="100%" height="350" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <div class="testimoni">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-center m-auto">
+                    <div class="col text-center welcome">
+                        <h1 class="display-4">Testimoni</h1>
+                        <div class="border-top border-primary w-50 mx-auto my-3"></div>
+                    </div>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Carousel -->
+                        <div class="carousel-inner">
+                            <div class="item carousel-item active">
+                                <div class="img-box"><img src="img/5.jpg" alt=""></div>
+                                <p class="testimonial">Buntut bakar dabu dabunya juara! Dagingnya empuk bgt parah, bumbunya meresap sempurna, rasanya enaaakkk pake banget. Trs ayam geprek corechicknya juga enak plus murah nian! Ayam kfc atau mcd pun kalah. Tiap keluarga lagi pada ngumpul, pasti selalu ngajak makan kesini. Tempatnya pun nyaman.</p>
+                                <p class="overview"><b>Samsudin Manuli</b>, Pilot</p>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="img-box"><img src="img/Screenshot_3.png" alt=""></div>
+                                <p class="testimonial">Tempatnya lebih cocok utk family lunch n dinner. Mrk menyediakan meny paket dan a la carte. makanannya beraneka ragam, tradisional, western, thailand. Aku pesan pempek, yg ternyata satu porsi isinya banyaaak, cukonya kental and pedas. trs beli tomyam yg seger bgtttt. mix platternya juga banyak. harganya bisa dibilang cukup murah.</p>
+                                <p class="overview"><b>Elisabeth Diana</b>, Barista</p>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="img-box"><img src="img/9.jpg" alt=""></div>
+                                <p class="testimonial">Tempat nya keren abis..dari luar nampak kecil..ternyata dibelakang luas dan ada halaman belakang yg bisa dibuat garden party..sangat romantis pokoknya</p>
+                                <p class="overview"><b>Abraham Purnomo</b>, Supir   </p>
+                            </div>
+                        </div>
+                        <!-- Carousel Controls -->
+                        <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <p>Develope By Mahasiswa @STT-NF 2021</p> 
+    </footer>
+    <script src="js/scrips.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
+</body>
+</html>
